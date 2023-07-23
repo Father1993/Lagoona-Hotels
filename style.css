@@ -1,0 +1,745 @@
+@font-face {
+    font-family: mullerbold;
+    src: url(fonts/MullerBold.woff);
+    }
+    @font-face {
+      font-family: mullerbold2;
+      src: url(fonts/MullerBold.woff2);
+    }
+    @font-face {
+      font-family: mullerlight;
+      src: url(fonts/MullerLight.woff);
+    }    
+    @font-face {
+      font-family: mullerlight2;
+      src: url(fonts/MullerLight.woff2);
+    }
+    @font-face {
+    font-family: mullermedium;
+    src: url(fonts/MullerMedium.woff);
+    }      
+    @font-face {
+    font-family: mullermedium2;
+    src: url(fonts/MullerMedium.woff2);
+    }      
+    @font-face {
+    font-family: mullerregular;
+    src: url(fonts/MullerRegular.woff);
+    }      
+    @font-face {
+    font-family: mullerregular2;
+    src: url(fonts/MullerRegular.woff2);
+    }      
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.back-color {
+    background-color: #f1f1f1;
+}
+
+a {
+    font-family: mullerregular;
+    line-height: 32px;
+    text-decoration:none;
+    color: black;
+  }
+
+.logo {
+    margin-top: 32px;
+    display: inline-block;
+    width: 261px;
+    height: 54px;
+    background-image: url(img/logo.jpg);
+    background-repeat: no-repeat; 
+}
+
+h1 {
+    font-family: mullerregular;
+}
+
+h2 {
+    font-family: mullerregular;
+}
+
+.phone-number {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 22px;
+    margin-left: 15px;
+    font-family: mullerbold; 
+} 
+
+.login {
+    display: inline-block;
+    margin-top: 47px;
+    margin-left: 520px;
+    color: #cc9933;
+}
+
+.down-header {
+    display: flex;
+    margin-top: 29px;
+    width: auto;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 15px; 
+}
+
+.link {
+    margin-top: 22px;
+    margin-left: 45px; 
+}
+
+.search {
+    display: flex;
+    width: 355px;
+    height: 48px;
+    margin-top: 11px;
+    margin-left: 80px;
+    padding-left: 23px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: 305px;
+    background-color: #f1f1f1;
+}
+
+.down-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-block {
+    display: block;
+    width: 520px;
+    height: 600px;
+    float: left;
+}
+
+.spec-img {
+    width: 595px;
+    height: 540px;
+    background-image: url(img/img.jpg);
+    margin: 0;  
+    border-radius: 15px;
+}
+
+.input {
+    font-family: mullerregular;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 520px;
+    height: 70px;
+    margin-bottom: 25px;
+    padding-left: 27px;
+}
+
+.text-main {
+    display: flex;
+    /* justify-content: space-around;  ------ считаю что это более подходящее решение, чем margin */
+}
+
+.fast-text {
+    display: flex;
+   
+    font-size: 40px;  
+}
+
+.spec-text {
+    display: flex;
+    font-size: 40px;
+}
+
+.button-block {
+    display: flex;
+}
+
+.button-number {
+    font-family: mullerbold;
+    width: 160px;
+    height: 70px;
+    background-color: #cc9933;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.amount {
+    font-family: mullerbold;
+    margin-left: 30px;
+    margin-top: 45px;
+    color: #cc9933;
+}
+
+.free {
+    margin-top: 45px;
+    margin-left: 5px;
+}
+
+span {
+    color: #a5a5a5;
+}
+
+.lux-room {
+    font-family: mullerbold;
+    display: flex;
+    font-size: 66px;
+    color: white;
+    width: 350px;
+    line-height: 58px;
+    margin: 0;
+    margin-top: 250px;
+    margin-left: 16px;
+    margin-bottom: 35px;    
+}
+
+.more-detailed{
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-family: mullerregular;
+    line-height: 32px;
+    display: flex;
+    color: white;
+    opacity: 75%;
+    padding-left: 16px;
+    font-size: 35px;
+}
+
+.detailed {
+    font-family: mullerregular;
+    display: flex;
+    color: white;
+    color: #ffcc66;
+    margin-left: 16px;
+    margin-top: 5px;
+}
+
+.arrow {
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.about {
+    font-family: mullerregular;
+    margin-left: 45px;
+    font-size: 40px;
+    line-height: 32px;
+}
+
+.about-text {
+    font-family: mullerregular;
+    max-width: 885px;
+    line-height: 32px;
+    color: #6f6f6f;
+    margin-left: 45px; 
+}
+
+.card-one {
+    background-color: #ffffff; 
+    border-radius: 15px; 
+}
+
+.exlusive {
+    font-family: mullermedium;
+    margin-left: 45px;
+    font-size: 22px;
+    color: #cc9933;
+    
+}
+
+.exlusive:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.card-title {
+     font-family: mullerregular;
+     margin-left: 45px;
+     line-height: 32px;
+     max-width: 395px;
+}
+
+.card-title-2 {
+    margin-left: 45px;
+    line-height: 32px;
+    width: 395px;    
+}
+
+.card-second {
+    background-color: #ffffff;
+    border-radius: 15px; 
+}
+
+.card-third {
+    display: inline-block;
+    width: 570px;
+    height: 330px;
+    background-color: #ffffff;
+    margin-right: 25px;
+    margin-top: 25px;
+    border-radius: 15px; 
+}
+
+.card-fourth {
+    float: right;
+    background-color: #ffffff;
+    width: 570px;
+    height: 330px;
+    margin-top: 25px;
+    border-radius: 15px; 
+}
+
+.border-radius-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.mini-cards {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.arrow-2 {
+    margin-left: 5px;
+    
+}
+
+.title-mini-cards {
+    font-family: mullerregular;
+    font-size: 16px;
+    line-height: 32px;
+    width: 186px;
+    margin-left: 49px;
+    
+}
+
+
+.icon {
+    margin-left: 45px;
+    margin-top: 45px;
+}
+
+
+.hotels-cards {
+    width: 375px;
+    height: 440px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.hotels-cards-end {
+    width: 375px;
+    height: 440px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    background-image: url(img/pic9.jpg);
+}
+
+.hotels-cards-end::before {
+    position: relative;  
+    top: 375px;  
+    left: 15px;
+    content: 'Посмотреть все варианты';
+    color: #f1f1f1;
+    font-size: 22px;
+    
+}
+
+.hotels-cards-end:hover {
+    cursor: pointer; 
+    transform: scale(1.0350);
+}
+
+.hotels-cards-end::after {
+    content: '>';
+    position: relative;  
+    top: 377px;  
+    margin-left: 19px;
+    color: #f1f1f1;
+    font-size: 22px;  
+}
+
+.hotels-cards-end:hover::after {
+    cursor: pointer; 
+    color: #cc9933;
+}
+
+.hotels-cards-end:hover::before {
+    color: #cc9933;
+}
+
+.look-more {
+    font-family: mullermedium;
+    margin-top: 370px;
+    margin-left: 30px;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 32px;
+}
+
+.title-price {
+    font-family: mullerbold;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.place-name {
+    font-family: mullerregular;
+    margin-left: 34px;
+}
+
+.place-city {
+    font-family: mullerregular;
+    color: #999999;
+    margin-left: 34px;
+}
+
+.span-1 {
+    font-family: mullerregular;
+    color: #999999;
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 34px;
+}
+
+.span-2 {
+    font-family: mullerregular;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+.buttun-find {
+    font-family: mullerbold;
+    color: #cc9933;
+    border: #cc9933 1px solid;
+    border-radius: 10px;
+    background-color: white;
+    width: 100px;
+    height: 41px;
+    font-weight: bold;
+    margin-left: 34px;
+}
+
+.conacts-box {
+    width: 472px;
+    height: 621px;
+    background-color: #ffffff;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.block-1 {
+    display: flex;
+    height: 118px;
+    background-color: #ffffff;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.address {
+    margin-left: 44px;
+    margin-top: 47px;
+    color: #666666;
+    font-family: mullerbold;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.street {
+    margin-left: 82px;
+    margin-top: 51px;
+    max-width: 226px;
+    font-size: 16px;
+    font-family: mullerregular;
+    color: #333333;
+}
+
+.block-2 {
+    display: flex;
+    height: 118px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+
+.numbers {
+    margin-left: 39px;
+    margin-top: 30px;
+    max-width: 151px; 
+}
+
+.tel-numbers {
+    color: #cc9933;
+    font-size: 16px;
+    font-family: mullerregular;
+    line-height: 24px;
+}
+
+.telephone {
+    margin-left: 45px;
+    margin-top: 28px;
+    color: #666666;
+    font-family: mullerbold;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.block-3 {
+    display: flex;
+    height: 145px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+
+.mail-box {
+    margin-left: 78px;
+    margin-top: 30px;
+    max-width: 223px;
+    height: 22px; 
+}
+
+.e-mail {
+    color: #cc9933;
+    font-size: 16px;
+    font-family: mullerregular;
+    line-height: 24px;
+}
+
+.text-helper { 
+    font-size: 16px;
+    font-family: mullerregular;
+    line-height: 24px;
+    color: #a0a0a0;
+}
+
+.mail {
+    margin-left: 47px;
+    margin-top: 26px;
+    color: #666666;
+    font-family: mullerbold;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.block-4 {
+    display: flex;
+    height: 98px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+
+.time-work {
+    margin-left: 71px;
+    margin-top: 31px;
+    max-width: 186px;
+    font-size: 16px;
+    font-family: mullerregular;
+    color: #333333;
+}
+
+.find-me {
+    margin-left: 45px;
+    margin-top: 45px;
+    width: 214px;
+    height: 70px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: mullerbold;
+    line-height: 32px;
+    color: #cc9933;
+    border: #cc9933 1px solid;
+    background-color: #ffffff;
+}
+
+.write {
+    margin-left: 191px;
+    margin-top: 82px;
+    font-size: 40px;
+    line-height: 32px;
+    font-family: mullerregular;
+}
+
+.forms {
+    margin-top: 48px;
+    margin-left: 158px;
+    width: 340px;
+    height: 390px;
+}
+
+.input {
+    width: 340px;
+    height: 70px;
+}
+
+#massage {
+    width: 340px;
+    height: 110px;
+}
+
+
+.btn {
+    background-color: #cc9933;
+    border-radius: 12px;
+    color: #ffffff;
+    width: 340px;
+    height: 70px;
+    border: none;
+    font-family: mullerbold;
+}
+
+.footer {
+    display: flex;
+    width: 1168px;
+    height: 338px;
+    background-image: url(img/logo-2.png);
+    background-repeat: no-repeat;
+    background-color: #333333;
+    background-position: 735px bottom;
+    border-radius: 12px;
+    margin-bottom: 70px;
+}
+
+.footer-left {
+    margin-top: 25px;
+    margin-left: 50px;
+    max-width: 298px;
+    color: #ffffff;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: mullerregular;
+}
+
+.other-text-2 {
+    margin-top: 35px;
+    max-width: 298px;
+    color: #ffffff;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: mullerregular;
+}
+
+.other-text-3 {
+    margin-top: 45px;
+    max-width: 298px;
+    color: #ffffff;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: mullerregular;
+}
+
+.text-conf {
+    color: #cc9933;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: mullerregular;
+}
+
+.footer-right {
+    margin-left: 160px;
+    max-width: 360px;
+    color: #ffffff;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: mullerregular;
+}
+
+.city-street {
+    margin-top: 45px;
+}
+
+.footer-links {
+    color: #cc9933;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: mullerregular;
+}
+
+.footer-text {
+    margin-top: 38px;
+    margin-bottom: 0px;
+}
+
+.margin-text {
+    margin: 0 0 0;
+}
+
+.link-margin {
+    margin-top: 30px;
+}
+
+.icon-social {
+    margin-top: 53px;
+    margin-left: 255px;
+    max-width: 20px;
+}
+
+.fa {
+    color: #999999;
+}
+
+.fa-chevron-circle-right {
+    color: #cc9933;
+    margin-right: 2px;
+}
+
+.url-style {
+    color: #cc9933;
+}
+
+.url-all {
+    color: white;
+}
+
+a {
+    transition-property: color, cursor, text-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+}
+
+a:hover {
+    color: #cc9933;
+    cursor: pointer;
+    text-shadow: 0px 3px 5px blue;
+}
+
+button {
+    transition-property: color, cursor, font-size, font-family, background-image;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+}
+
+button:hover {
+    font-family: mullerbold;
+    font-size: 20px;
+    color: #cc9933;
+    cursor: pointer;
+    background-image: url(img/wave.jpg);
+}
